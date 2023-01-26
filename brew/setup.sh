@@ -4,7 +4,7 @@ set -e
 
 echo Brew setup
 
-curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | bash
 brew tap Homebrew/bundle
 brew bundle
 
