@@ -23,6 +23,11 @@ if [[ $(grep -L "$JENV_COMMAND" ~/.zprofile) ]]; then
   echo 'eval "$(jenv init -)"' >> ~/.zprofile
 fi
 
+POWERLEVEL_COMMAND='source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme'
+if [[ $(grep -L "$POWERLEVEL_COMMAND" ~/.zprofile) ]]; then
+  echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+fi
+
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
