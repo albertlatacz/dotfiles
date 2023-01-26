@@ -17,6 +17,15 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap Homebrew/bundle
 brew bundle
 
+JENV_COMMAND='export PATH="$HOME/.jenv/bin:$PATH"'
+if [[ $(grep -L $BREW_COMMAND ~/.zprofile) ]]; then
+  $ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zprofile
+  $ echo 'eval "$(jenv init -)"' >> ~/.zprofile
+fi
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 echo "Sign into the App Store then press <enter>"
 read enter
 
