@@ -2,8 +2,7 @@
 cd $(dirname $0)
 set -e
 
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+source ~/.zprofile
 
 mkdir -p ~/dev
 
