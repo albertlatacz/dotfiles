@@ -1,5 +1,5 @@
 # dotfiles
 
 ```bash
-curl -o-  https://raw.githubusercontent.com/albertlatacz/dotfiles/main/bootstrap.sh | bash
+curl -o-  https://raw.githubusercontent.com/albertlatacz/dotfiles/main/bootstrap.sh | bash -l
 ```
