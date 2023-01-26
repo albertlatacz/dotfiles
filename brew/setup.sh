@@ -6,8 +6,12 @@ echo Brew setup
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo '# Set PATH, MANPATH, etc., for Homebrew.' >> /Users/albert/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/albert/.zprofile
+BREW_COMMAND='eval "$(/opt/homebrew/bin/brew shellenv)"'
+if [[ $(grep -L $BREW_COMMAND ~/.zprofile) ]]; then
+  echo '# Set PATH, MANPATH, etc., for Homebrew.' >> ~/.zprofile
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+fi
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew tap Homebrew/bundle
