@@ -21,3 +21,5 @@ antigen apply
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 source ~/.dotfiles/zsh/aliases
+
+source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
