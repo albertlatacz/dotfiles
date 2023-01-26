@@ -2,13 +2,13 @@
 set -e
 
 rm -rf .dotfiles
-rm -rf dotfiles-master
+rm -rf dotfiles-main
 
-curl -L https://github.com/albertlatacz/dotfiles/archive/master.zip -o master.zip
-unzip master.zip
-rm -rf master.zip
-./dotfiles-master/brew/setup.sh
-rm -rf dotfiles-master
+curl -L https://github.com/albertlatacz/dotfiles/archive/main.zip -o df-main.zip
+unzip df-main.zip
+rm -rf df-main.zip
+./dotfiles-main/brew/setup.sh
+rm -rf dotfiles-main
 
 git clone https://github.com/albertlatacz/dotfiles.git .dotfiles
 pushd .dotfiles
