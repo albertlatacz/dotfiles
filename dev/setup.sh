@@ -7,5 +7,5 @@ source ~/.zprofile
 mkdir -p ~/dev
 
 mkdir -p ~/.jenv/versions
-jenv add /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
 jenv global 11.0
