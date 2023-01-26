@@ -1,10 +1,9 @@
 #!/bin/bash
 cd $(dirname $0)
-set -e
+#set -e
 
 echo Brew setup
 
-export CI=temp
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew tap Homebrew/bundle
