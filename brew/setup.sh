@@ -19,8 +19,8 @@ brew bundle
 
 JENV_COMMAND='export PATH="$HOME/.jenv/bin:$PATH"'
 if [[ $(grep -L $BREW_COMMAND ~/.zprofile) ]]; then
-  $ echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zprofile
-  $ echo 'eval "$(jenv init -)"' >> ~/.zprofile
+  echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zprofile
+  echo 'eval "$(jenv init -)"' >> ~/.zprofile
 fi
 
 export PATH="$HOME/.jenv/bin:$PATH"
