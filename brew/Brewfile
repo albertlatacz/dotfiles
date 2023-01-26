@@ -69,7 +69,7 @@ cask "spotify"
 cask "sublime-text"
 cask "the-unarchiver"
 cask "vlc"
-cask "zoomus"
+cask "zoom"
 
 # containers
 cask "docker"
