@@ -9,3 +9,11 @@ mkdir -p ~/dev
 mkdir -p ~/.jenv/versions
 jenv add /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
 jenv global 11.0
+
+# Ruby
+ruby-install ruby 3.1.3
+source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.3
+
+gem install jekyll

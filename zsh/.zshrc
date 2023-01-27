@@ -17,9 +17,17 @@ antigen theme romkatv/powerlevel10k
 
 antigen apply
 
+# Ruby
+source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/auto.sh
+chruby ruby-3.1.3
+
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 source ~/.dotfiles/zsh/aliases
 
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+

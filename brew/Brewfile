@@ -14,6 +14,7 @@ tap "AdoptOpenJDK/openjdk"
 # machine
 brew "act"
 brew "antigen"
+brew "chruby"
 brew "coreutils"
 brew "dos2unix"
 brew "fd"
@@ -26,8 +27,10 @@ brew "just"
 brew "mas"
 brew "mkcert"
 brew "rename"
+brew "ruby-install"
 brew "powerlevel10k"
 brew "watchexec"
+brew "xz"
 brew "zsh"
 
 # languages
