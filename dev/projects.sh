@@ -11,8 +11,8 @@ git clone git@github.com:talk2duck/gradle-s3-build-cache.git
 
 git clone git@github.com:http4k/http4k.git
 git clone git@github.com:http4k/http4k-connect.git
-git clone git@github.com:http4k/http4k-toolbox.git
-git clone git@github.com:http4k/http4k-toolbox-cli.git
+git clone git@github.com:http4k/toolbox.git
+git clone git@github.com:http4k/toolbox-cli.git
 
 git clone git@github.com:fork-handles/forkhandles.git
 
