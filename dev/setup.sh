@@ -2,7 +2,9 @@
 cd $(dirname $0)
 set -e
 
-source ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
 
 mkdir -p ~/dev
 
