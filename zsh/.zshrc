@@ -26,6 +26,8 @@ chruby ruby-3.1.3
 
 export PATH="$HOME/.jenv/bin:$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
+eval "$(jenv init -)"
+
 source ~/.dotfiles/zsh/aliases
 
 
