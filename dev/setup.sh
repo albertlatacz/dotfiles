@@ -10,7 +10,8 @@ mkdir -p ~/dev
 
 mkdir -p ~/.jenv/versions
 jenv add /Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home
-jenv global 11.0
+jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home
+jenv global 17.0
 
 # Ruby
 ruby-install ruby 3.1.3

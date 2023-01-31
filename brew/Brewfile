@@ -81,3 +81,4 @@ cask "docker"
 
 # languages
 cask "temurin11"
+cask "temurin17"
