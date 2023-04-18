@@ -1,4 +1,4 @@
-#docker
+# docker
 alias d=docker
 alias dkill='d rm -vf $(docker ps -aq)'
 alias dps='d ps'
@@ -6,7 +6,7 @@ alias di='d images'
 alias drmi='d rm -f ${docker ps -a -q}'
 
 
-#k8s
+# k8s
 alias k='kubectl'
 alias kg='k get -w'
 alias kge='kg events'
@@ -26,7 +26,7 @@ function ktn {
 	kubectl config set-context $(kubectl config current-context) --namespace=$1
 }
 
-#helm
+# helm
 alias h='helm'
 alias hl='h list'
 alias hd='h delete --purge'
@@ -36,7 +36,7 @@ alias hi='h upgrade --install'
 alias hrl='h repo list'
 
 
-#git
+# git
 alias g='git'
 alias ga='g add ./'
 alias gc='g commit -S -m'
@@ -64,3 +64,6 @@ alias gpb='g push --set-upstream origin `gbn`'
 alias gp='g pull'
 
 alias approve="find . -name \"*.actual\" -exec rename --force 's|\.actual|\.approved|' {} +"
+
+# yarn
+alias yup='yarn upgrade-interactive --latest'
