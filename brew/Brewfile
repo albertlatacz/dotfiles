@@ -10,6 +10,7 @@ tap "heroku/brew"
 tap "http4k/tap"
 tap "aws/tap"
 tap "AdoptOpenJDK/openjdk"
+tap "hashicorp/tap"
 
 # machine
 brew "act"
@@ -43,6 +44,7 @@ brew "openjdk@17"
 
 # cloudnative
 brew "awscli"
+brew "terraform"
 brew "heroku"
 brew "http4k"
 brew "k9s"
